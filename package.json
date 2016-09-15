@@ -1,0 +1,19 @@
+{
+  "name": "trello-db",
+  "version": "0.1.0",
+  "description": "A library to pull data from trello",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/mocha ./test/index.test --async-only"
+  },
+  "dependencies": {
+    "node-trello": "latest",
+    "async": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest"
+  },
+  "author": "chainzhang",
+  "license": "ISC"
+}

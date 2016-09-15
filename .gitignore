@@ -1,0 +1,8 @@
+# environment
+.env.js
+
+# dependencies
+node_modules
+
+!.gitkeep
+!.gitignore
