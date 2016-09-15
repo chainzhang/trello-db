@@ -6,17 +6,17 @@ const db = new TrelloDb({
     token: env.token
 });
 
-db.board('70RyU5WL').lists((err, lists) => {
+db.board(env.board).lists((err, lists) => {
     if (err) return console.error(lists);
     console.log(lists);
 });
 
-db.board('70RyU5WL').cardsInList('node', (err, cards) => {
+db.board(env.board).cardsInList('node', (err, cards) => {
     if (err) return console.error(cards);
     console.log(cards);
 });
 
-db.board('70RyU5WL').cardsInList('node', (err, cards) => {
+db.board(env.board).cardsInList('node', (err, cards) => {
     if (err) return console.error(cards);
     console.log(cards.map(c => c.attachments));
 }, { attachment: true });
